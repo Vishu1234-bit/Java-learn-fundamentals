@@ -1,0 +1,18 @@
+public class AdminGuestMode {
+
+    public static void main(String[] args) {
+        String arg = String.join(",",args);
+        String adminflag = "--admin";
+        String guestflag = "--guest";
+		if(arg.contains(adminflag) && arg.contains(guestflag)){
+		    System.out.print("Please, select either 'ADMIN' or 'GUEST' mode for this program");
+		}
+		else if(arg.contains(guestflag)){
+		    System.out.print("Hello, Guest!");
+		}
+		else if(arg.contains(adminflag)) {
+		    System.out.print("Hello, Admin!");
+		}
+	}
+
+}
